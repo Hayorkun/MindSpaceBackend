@@ -11,7 +11,7 @@ const app = express();
 const PORT = 8080;
 
 app.use(express.json());
-app.use(cors({ origin: ["http://localhost:5173", "https://mindspace-virid.vercel.app"] }));
+app.use(cors({ origin: ["http://localhost:5173", "https://mindspace-taskmanager.vercel.app"] }));
 
 app.use("/api/users", UserRoutes);
 app.use("/api/tasks", TaskRoutes);
